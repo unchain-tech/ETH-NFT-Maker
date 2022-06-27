@@ -1,3 +1,5 @@
+![](https://i.imgur.com/8hPawj3.png)
+
 # 🎨 Create an NFT maker!
 
 このコースを始めるには、下記のステップを実行してください。
