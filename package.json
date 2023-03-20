@@ -1,0 +1,39 @@
+{
+  "name": "NFT-Maker",
+  "version": "1.0.0",
+  "description": "sample of ETH-NFT-Maker",
+  "main": "\"\"",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.3",
+    "prettier-plugin-solidity": "^1.1.2",
+    "simple-git-hooks": "^2.8.1"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "scripts": {
+    "contract": "yarn workspace contract",
+    "client": "yarn workspace client",
+    "prettier": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .prettierignore --write .",
+    "prettier:check": "prettier --ignore-unknown --no-error-on-unmatched-pattern --ignore-path .prettierignore --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  }
+}
