@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.17;
 import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 
 //OpenZeppelinが提供するヘルパー機能をインポートします。
@@ -14,7 +14,7 @@ contract Web3Mint is ERC721 {
     string imageURL;
   }
 
-  NftAttributes[] Web3Nfts;
+  NftAttributes[] public Web3Nfts;
 
   using Counters for Counters.Counter;
   // tokenIdはNFTの一意な識別子で、0, 1, 2, .. N のように付与されます。

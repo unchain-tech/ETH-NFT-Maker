@@ -1,5 +1,5 @@
 const main = async () => {
-  const { hre } = require("hardhat");
+  const { hre } = require('hardhat');
   // コントラクトがコンパイルします
   // コントラクトを扱うために必要なファイルが `artifacts` ディレクトリの直下に生成されます。
   const nftContractFactory = await hre.ethers.getContractFactory('Web3Mint');

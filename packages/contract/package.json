@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "deploya": "npx hardhat run scripts/deploy.js",
+    "solhint": "solhint --max-error 0 -c ./.solhint.json \"contracts/**/*.sol\""
   },
   "keywords": [],
   "author": "",
@@ -24,6 +26,7 @@
     "ethers": "^5.7.2",
     "hardhat": "^2.13.0",
     "hardhat-gas-reporter": "^1.0.9",
+    "solhint": "3.3.7",
     "solidity-coverage": "^0.7.22",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
