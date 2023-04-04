@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx hardhat test",
-    "deploya": "npx hardhat run scripts/deploy.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network sepolia",
     "solhint": "solhint --max-error 0 -c ./.solhint.json \"contracts/**/*.sol\""
   },
   "keywords": [],
@@ -33,6 +33,7 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.2"
+    "@openzeppelin/contracts": "^4.8.2",
+    "dotenv": "^16.0.3"
   }
 }
