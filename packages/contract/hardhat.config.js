@@ -1,7 +1,8 @@
 // hardhat.config.js
 require('@nomicfoundation/hardhat-toolbox');
+require('dotenv').config();
 
-const { PRIVATE_KEY, STAGING_ALCHEMY_KEY } = process.env;
+const { STAGING_ALCHEMY_KEY, PRIVATE_KEY } = process.env;
 
 module.exports = {
   solidity: '0.8.17',
