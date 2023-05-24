@@ -1,6 +1,7 @@
-"name": "ETH-NFT-Maker",
+{
+  "name": "ETH-NFT-Game",
   "version": "1.0.0",
-  "description": "NFT Maker",
+  "description": "Creating NFT Collections",
   "private": true,
   "workspaces": {
     "packages": [
@@ -12,3 +13,4 @@
     "client": "yarn workspace client",
     "test": "yarn workspace contract test"
   }
+}
