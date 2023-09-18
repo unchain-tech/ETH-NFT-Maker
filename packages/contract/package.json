@@ -1,26 +1,40 @@
 {
   "name": "contract",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network sepolia",
+    "solhint": "solhint --max-error 0 -c ./.solhint.json \"contracts/**/*.sol\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@ethersproject/abi": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
-    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
     "@nomiclabs/hardhat-etherscan": "^3.1.7",
-    "@openzeppelin/contracts": "^4.9.0",
-    "@typechain/ethers-v5": "^10.2.1",
-    "@typechain/hardhat": "^6.1.6",
+    "@openzeppelin/contracts": "^4.8.2",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^9.1.1",
     "chai": "^4.3.7",
-    "ethers": "5.4.7",
-    "hardhat": "^2.14.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.13.0",
     "hardhat-gas-reporter": "^1.0.9",
-    "solidity-coverage": "^0.8.2",
-    "typechain": "^8.1.1"
+    "solhint": "3.3.7",
+    "solidity-coverage": "^0.7.22",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^5.0.2"
   },
-  "scripts": {
-    "test": "npx hardhat test"
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2",
+    "dotenv": "^16.0.3"
   }
 }

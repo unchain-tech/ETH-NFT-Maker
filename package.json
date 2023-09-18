@@ -1,7 +1,7 @@
 {
-  "name": "ETH-NFT-Game",
+  "name": "ETH-NFT-Maker",
   "version": "1.0.0",
-  "description": "Creating NFT Collections",
+  "description": "Upload your own image into an NFT",
   "private": true,
   "workspaces": {
     "packages": [
