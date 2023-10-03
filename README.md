@@ -10,7 +10,7 @@
 git clone git@github.com:unchain-tech/ETH-NFT-Maker.git
 ```
 
-または、オプション`-b complete`を指定することでcompleteブランチのみをクローンすることもできます。
+または、オプション`-b complete`を指定することで complete ブランチのみをクローンすることもできます。
 
 ```
 git clone -b complete git@github.com:unchain-tech/ETH-NFT-Maker.git
@@ -34,4 +34,4 @@ yarn
 yarn client start
 ```
 
-ターミナルに表示されたURLにアクセスしてください。[こちら](https://app.unchain.tech/learn/ETH-NFT-Maker/ja/3/3/)のページ「🥳 NFT を Mint する」を参照し、アプリケーションを操作してみましょう！
+ターミナルに表示された URL にアクセスしてください。[こちら](https://app.unchain.tech/learn/ETH-NFT-Maker/ja/3/3/)のページ「🥳 NFT を Mint する」を参照し、アプリケーションを操作してみましょう！
