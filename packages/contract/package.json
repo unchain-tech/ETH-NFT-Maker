@@ -1,16 +1,14 @@
 {
   "name": "contract",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "UNCHAIN ETH NFT Maker contract",
+  "private": true,
   "scripts": {
-    "test": "npx hardhat test",
+    "run:script": "npx hardhat run scripts/run.js",
     "deploy": "npx hardhat run scripts/deploy.js --network sepolia",
+    "test": "npx hardhat test",
     "solhint": "solhint --max-error 0 -c ./.solhint.json \"contracts/**/*.sol\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@ethersproject/providers": "^5.7.2",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
@@ -20,8 +18,6 @@
     "@nomiclabs/hardhat-etherscan": "^3.1.7",
     "@typechain/ethers-v5": "^10.2.0",
     "@typechain/hardhat": "^6.1.5",
-    "@types/chai": "^4.3.4",
-    "@types/mocha": "^9.1.1",
     "chai": "^4.3.7",
     "ethers": "^5.7.2",
     "hardhat": "^2.13.0",
@@ -29,8 +25,7 @@
     "solhint": "3.3.7",
     "solidity-coverage": "^0.7.22",
     "ts-node": "^10.9.1",
-    "typechain": "^8.1.1",
-    "typescript": "^5.0.2"
+    "typechain": "^8.1.1"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
