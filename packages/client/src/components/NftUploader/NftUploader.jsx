@@ -7,13 +7,12 @@ const NftUploader = () => {
   return (
     <div className="outerBox">
       <div className="title">
-        <h2>NFT Uploader</h2>
-        <p>image file (jpg or png)</p>
+        <h2>NFTアップローダー</h2>
       </div>
       <div className="nftUplodeBox">
         <div className="imageLogoAndText">
           <img src={ImageLogo} alt="imagelogo" />
-          <p>drag your image here</p>
+          <p>ここにドラッグ＆ドロップしてね</p>
         </div>
         <input
           className="nftUploadInput"
@@ -23,9 +22,9 @@ const NftUploader = () => {
           accept=".jpg , .jpeg , .png"
         />
       </div>
-      <p>or</p>
+      <p>または</p>
       <Button variant="contained">
-        upload file
+        ファイルを選択
         <input
           className="nftUploadInput"
           type="file"

@@ -1,6 +1,6 @@
 {
-  "name": "ETH-NFT-Maker",
-  "version": "1.0.0",
+  "name": "eth-nft-maker",
+  "version": "0.1.0",
   "description": "Upload your own image into an NFT",
   "private": true,
   "workspaces": {
