@@ -5,9 +5,7 @@ module.exports = {
     mocha: true,
     node: true,
   },
-  plugins: ['@typescript-eslint'],
   extends: ['standard', 'prettier', 'plugin:node/recommended'],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 12,
   },
@@ -26,6 +24,6 @@ module.exports = {
     'no-unused-vars': ['warn'],
   },
   settings: {
-    node: { tryExtensions: ['.js', '.json', '.node', '.ts', '.d.ts'] },
+    node: { tryExtensions: ['.js', '.json', '.node'] },
   },
 };

@@ -1,8 +1,7 @@
 {
-  "name": "ETH-NFT-Maker",
-  "version": "1.0.0",
+  "name": "eth-nft-maker",
+  "version": "0.1.0",
   "description": "sample of ETH-NFT-Maker",
-  "main": "\"\"",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
