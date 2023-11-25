@@ -6,7 +6,6 @@ import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 import '@openzeppelin/contracts/utils/Counters.sol';
 
 import './libraries/Base64.sol';
-import 'hardhat/console.sol';
 
 contract Web3Mint is ERC721 {
   struct NftAttributes {
@@ -20,9 +19,7 @@ contract Web3Mint is ERC721 {
   // tokenIdはNFTの一意な識別子で、0, 1, 2, .. N のように付与されます。
   Counters.Counter private _tokenIds;
 
-  constructor() ERC721('NFT', 'nft') {
-    console.log('This is my NFT contract.');
-  }
+  constructor() ERC721('NFT', 'nft') {}
 
   // ユーザーが NFT を取得するために実行する関数です。
 
@@ -30,7 +27,6 @@ contract Web3Mint is ERC721 {
     uint256 newItemId = _tokenIds.current();
     _safeMint(msg.sender, newItemId);
     Web3Nfts.push(NftAttributes({name: name, imageURL: imageURI}));
-    console.log('An NFT w/ ID %s has been minted to %s', newItemId, msg.sender);
     _tokenIds.increment();
   }
 
