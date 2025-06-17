@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "UNCHAIN ETH NFT Maker contract",
   "private": true,
+  "scripts": {
+    "run:script": "npx hardhat run scripts/run.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network sepolia",
+    "test": "npx hardhat test"
+  },
   "devDependencies": {
     "@ethersproject/providers": "^5.7.2",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
@@ -18,5 +23,8 @@
     "hardhat-gas-reporter": "^1.0.9",
     "solidity-coverage": "^0.7.22",
     "typechain": "^8.1.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2"
   }
 }
